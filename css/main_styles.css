@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-brand {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 0;
 }
 
@@ -67,17 +67,25 @@ body {
 @media (max-width: 767px) {
     #logo-img {
         background: url("../images/restraurant-logo-sm.png") no-repeat center;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }   
 
     .custom-toggler.navbar-toggler {
         align-self: center;
+    }
+
+    .navbar-brand {
+        padding-top: 10px;
     }
 }
 
 @media (max-width: 575px) {
     .custom-toggler.navbar-toggler {
         align-self: flex-end;
+    }
+
+    .navbar-brand {
+        padding-top: 0;
     }
 }

@@ -56,10 +56,18 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1, 7, 54, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     #nav-list a {
         font-size: 0.9em;
         padding-left: 20px;
         padding-right: 20px;
+    }   
+}
+
+@media (max-width: 767px) {
+    #logo-img {
+        background: url("../images/restraurant-logo-sm.png") no-repeat center;
+        width: 100px;
+        height: 100px;
     }   
 }

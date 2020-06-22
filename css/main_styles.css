@@ -21,7 +21,7 @@ body {
 
 .navbar-brand {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
 }
 
 .navbar-brand h1 {
@@ -70,4 +70,14 @@ body {
         width: 100px;
         height: 100px;
     }   
+
+    .custom-toggler.navbar-toggler {
+        align-self: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-toggler.navbar-toggler {
+        align-self: flex-end;
+    }
 }

@@ -1,0 +1,65 @@
+
+body {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+    border-radius: 0;
+    border: 0;
+    background-color: #f39a02;
+
+}
+
+#logo-img {
+    background: url("/images/restraurant-logo.png") no-repeat center;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand h1 {
+    font-family: 'MuseoModerno', cursive;
+    color: #010736;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list a {
+    color: #010736;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#nav-list a:hover {
+    background-color: #010736;
+    color: #f39a02;
+}
+
+.custom-toggler.navbar-toggler {
+    border: none;
+} 
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1, 7, 54, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 992px) {
+    #nav-list a {
+        font-size: 0.9em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+}

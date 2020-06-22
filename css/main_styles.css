@@ -13,7 +13,7 @@ body {
 }
 
 #logo-img {
-    background: url("/images/restraurant-logo.png") no-repeat center;
+    background: url("../images/restraurant-logo.png") no-repeat center;
     width: 120px;
     height: 120px;
     margin-right: 10px;

@@ -67,8 +67,8 @@ body {
 @media (max-width: 767px) {
     #logo-img {
         background: url("../images/restraurant-logo-sm.png") no-repeat center;
-        width: 80px;
-        height: 80px;
+        width: 55px;
+        height: 55px;
     }   
 
     .custom-toggler.navbar-toggler {
@@ -76,7 +76,7 @@ body {
     }
 
     .navbar-brand {
-        padding-top: 10px;
+        padding-top: 0;
     }
 }
 

@@ -71,21 +71,85 @@ body {
         height: 55px;
     }   
 
-    .custom-toggler.navbar-toggler {
-        align-self: center;
-    }
-
     .navbar-brand {
         padding-top: 0;
+    }
+
+    #nav-list svg {
+        margin-right: 10px;
+    }
+
+    #nav-list a {
+        text-align: left;
     }
 }
 
-@media (max-width: 575px) {
-    .custom-toggler.navbar-toggler {
-        align-self: flex-end;
+@media (min-width: 0px) {
+    #main-content {
+        padding: 0;
     }
 
-    .navbar-brand {
-        padding-top: 0;
+    .jumbotron-fluid {
+        background-image: url("../images/restaurant-interior-xs.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    #main-content {
+        padding: 0;
+    }
+
+    .jumbotron-fluid {
+        background-image: url("../images/restaurant-interior-sm.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        padding: 0;
+    }
+
+    .jumbotron-fluid {
+        background-image: url("../images/restaurant-interior-md.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 425px;
+    }
+}
+
+@media (min-width: 992px) {
+    #main-content {
+        padding: 0;
+    }
+
+    .jumbotron-fluid {
+        background-image: url("../images/restaurant-interior-lg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #main-content {
+        padding: 0;
+    }
+
+    .jumbotron-fluid {
+        background-image: url("../images/restaurant-interior.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 675px;
     }
 }

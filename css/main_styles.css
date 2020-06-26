@@ -67,17 +67,47 @@ body {
     padding: 60px;
 }
 
+#home-tiles span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #f39a02;
+    font-size: 20px;
+    background: #010736;
+    opacity: 0.8;
+    padding: 5px;
+}
+
 #menu-tile, #special-tile, #map-tile {
-    height: 250px;
     width: 100%;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
-    border: 1px solid black;
+    border-radius: 10px;
+    border: 1px solid #010736;
 }
 
 #menu-tile:hover, #special-tile:hover, #map-tile:hover {
-    box-shadow: 0 1px 5px 1px grey;
+    box-shadow: 0 2px 8px 2px grey;
+}
+
+#menu-tile {
+    background-image: url("https://media.istockphoto.com/photos/assorted-indian-recipes-food-various-picture-id922783734?k=6&m=922783734&s=612x612&w=0&h=hljWwPRzq8Cc_PHbx693FPnQ_39yNqD4BUjtMbgASlM=");
+    background-size: cover;
+    background-position: center;
+}
+
+#special-tile {
+    background-image: url("https://i.pinimg.com/originals/4b/eb/92/4beb927a96b44773e39b2f5467fd2748.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#map-tile {
+    background-image: url("https://chop.ca/sites/default/files/cached_location_maps/location_map_419.png");
+    background-size: cover;
+    background-position: center;
 }
 /* END OF HOME PAGE */
 
@@ -103,6 +133,10 @@ body {
         font-size: 0.9em;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #menu-tile, #special-tile, #map-tile {
+        height: 150px;
     }
 }
 /* END OF EXTRA SMALL DEVICES */
@@ -144,6 +178,10 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #menu-tile, #special-tile, #map-tile {
+        height: 200px;
+    }
 }
 /* END OF SMALL DEVICES */
 
@@ -166,6 +204,10 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #menu-tile, #special-tile, #map-tile {
+        height: 220px;
+    }
 }
 /* END OF MEDIUM DEVICES */
 
@@ -182,6 +224,10 @@ body {
         background-size: cover;
         height: 550px;
     }
+
+    #menu-tile, #special-tile, #map-tile {
+        height: 250px;
+    }
 }
 /* END OF LARGE DEVICES */
 
@@ -197,6 +243,10 @@ body {
         background-position: center;
         background-size: cover;
         height: 675px;
+    }
+
+    #menu-tile, #special-tile, #map-tile {
+        height: 280px;
     }
 }
 /* END OF EXTRA LARGE DEVICES */

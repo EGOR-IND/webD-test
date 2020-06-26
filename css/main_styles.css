@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     color: #fff;
     font-family: 'Oxygen', sans-serif;
+    background-color: #fffde7;
 }
 
 /* HEADER */
@@ -64,7 +65,7 @@ body {
 }
 
 #home-tiles {
-    padding: 60px;
+    padding: 30px;
 }
 
 #home-tiles span {
@@ -77,6 +78,7 @@ body {
     background: #010736;
     opacity: 0.8;
     padding: 5px;
+    border-radius: 10px;
 }
 
 #menu-tile, #special-tile, #map-tile {
@@ -103,13 +105,13 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-#map-tile {
-    background-image: url("https://chop.ca/sites/default/files/cached_location_maps/location_map_419.png");
-    background-size: cover;
-    background-position: center;
-}
 /* END OF HOME PAGE */
+
+/* FOOTER */
+.card-footer {
+    background-color: #212121;
+}
+/* END OF FOOTER */
 
 /* EXTRA SMALL DEVICES */
 @media (min-width: 0px) and (max-width: 575px) {
@@ -137,6 +139,10 @@ body {
 
     #menu-tile, #special-tile, #map-tile {
         height: 150px;
+    }
+
+    #home-tiles {
+        padding: 30px;
     }
 }
 /* END OF EXTRA SMALL DEVICES */
@@ -181,6 +187,10 @@ body {
 
     #menu-tile, #special-tile, #map-tile {
         height: 200px;
+    }
+
+    #home-tiles {
+        padding: 45px;
     }
 }
 /* END OF SMALL DEVICES */
@@ -247,6 +257,10 @@ body {
 
     #menu-tile, #special-tile, #map-tile {
         height: 280px;
+    }
+
+    #home-tiles {
+        padding: 60px;
     }
 }
 /* END OF EXTRA LARGE DEVICES */

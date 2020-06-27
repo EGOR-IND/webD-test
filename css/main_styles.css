@@ -43,11 +43,17 @@ body {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 10px;
 }
 
 #nav-list a:hover {
     background-color: #010736;
     color: #f39a02;
+}
+
+#nav-list hr {
+    background-color: #010736;
+    margin: 5px 5px 5px 5px;
 }
 
 .custom-toggler.navbar-toggler {
@@ -105,11 +111,80 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+#map-tile iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#menu-categories-title {
+    color: #010736;
+    margin: 15px;
+}
+
+#menu-items > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menu-items > div:nth-last-child(1) {
+    margin-right: auto;
+}
+
+#menu-items > div:nth-last-child(2) {
+    margin-left: auto;
+}
+
+.category-title img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.category-title section{
+    text-align: center;
+}
 /* END OF HOME PAGE */
 
 /* FOOTER */
 .card-footer {
     background-color: #212121;
+}
+
+#hours hr, #address hr {
+    background-color: white;
+}
+
+.card-footer div.row {
+    margin-bottom: 35px;
+}
+
+#copyright-section {
+    color: #f39a02;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
 }
 /* END OF FOOTER */
 
@@ -143,6 +218,19 @@ body {
 
     #home-tiles {
         padding: 30px;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+    #hours hr, #address hr {
+        width: 50%;
+    }
+
+    .category-title img {
+        width: 130px;
+        height: 130px;
     }
 }
 /* END OF EXTRA SMALL DEVICES */
@@ -192,6 +280,11 @@ body {
     #home-tiles {
         padding: 45px;
     }
+
+    .category-title img {
+        width: 170px;
+        height: 170px;
+    }
 }
 /* END OF SMALL DEVICES */
 
@@ -217,6 +310,11 @@ body {
 
     #menu-tile, #special-tile, #map-tile {
         height: 220px;
+    }
+
+    .category-title img {
+        width: 170px;
+        height: 170px;
     }
 }
 /* END OF MEDIUM DEVICES */

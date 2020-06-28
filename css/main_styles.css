@@ -26,6 +26,12 @@ body {
     padding-bottom: 0;
 }
 
+.navbar-header a {
+    display: block;
+    width: min-content;
+    height: min-content;
+}
+
 .navbar-brand h1 {
     font-family: 'MuseoModerno', cursive;
     color: #010736;
@@ -38,21 +44,27 @@ body {
     text-decoration: none;
 }
 
+#nav-list li {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
 #nav-list a {
     color: #010736;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
-#nav-list a:hover {
+#nav-list a.active, #nav-list a:hover {
     background-color: #010736;
     color: #f39a02;
 }
 
 #nav-list hr {
-    background-color: #010736;
+    background-color: #ca8104;
     margin: 5px 5px 5px 5px;
 }
 
@@ -123,6 +135,7 @@ body {
 #menu-categories-title {
     color: #010736;
     margin: 15px;
+    font-weight: bold;
 }
 
 #menu-items > div {
@@ -138,22 +151,57 @@ body {
     margin-left: auto;
 }
 
+#menu-items a {
+    color: #010736;
+    font-weight: bold;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-items a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#menu-items img:hover {
+    box-shadow: 0 0 7px 7px #f1c021;
+} 
+
 .category-title img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
     display: block;
 }
 
 .category-title section{
     text-align: center;
+    margin-top: 10px;
+}
+
+.dish-title {
+    padding: 10px;
+    background-color: #f1c021;
+    border-radius: 10px;
+}
+
+.dish-title img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 /* END OF HOME PAGE */
 
 /* FOOTER */
 .card-footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
     background-color: #212121;
 }
 
@@ -313,8 +361,8 @@ body {
     }
 
     .category-title img {
-        width: 170px;
-        height: 170px;
+        width: 160px;
+        height: 160px;
     }
 }
 /* END OF MEDIUM DEVICES */

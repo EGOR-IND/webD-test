@@ -187,14 +187,72 @@ body {
     padding: 10px;
     background-color: #f1c021;
     border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .dish-title img {
     width: 100%;
+    height: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+}
+
+#dish-name {
+    text-align: center;
+    color: #010736;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dish-info {
+    padding: 10px;
+}
+
+#dish-info #dish-price {
+    color: #010736;
+    font-weight: bold;
+}
+
+#dish-info #dish-menu-id {
+    background-color: #010736;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    border-radius: 5px;
+}
+
+#headingOne {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #f1c021;
+}
+
+#details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f1c021;
+}
+
+#details-btn {
+    padding: 0;
+    text-decoration: none;
+    background-color: #010736;
+    color: #f1c021;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0 5px 0 5px;
+    margin-top: 10px;
+}
+
+#myAccordion .card-body {
+    padding: 0;
+    text-align: center;
 }
 /* END OF HOME PAGE */
 
@@ -280,6 +338,10 @@ body {
         width: 130px;
         height: 130px;
     }
+
+    .dish-title img {
+        height: 180px;
+    }
 }
 /* END OF EXTRA SMALL DEVICES */
 
@@ -333,6 +395,10 @@ body {
         width: 170px;
         height: 170px;
     }
+
+    .dish-title img {
+        height: 200px;
+    }
 }
 /* END OF SMALL DEVICES */
 
@@ -383,6 +449,10 @@ body {
 
     #menu-tile, #special-tile, #map-tile {
         height: 250px;
+    }
+
+    .dish-title img {
+        height: 200px;
     }
 }
 /* END OF LARGE DEVICES */

@@ -134,8 +134,10 @@ body {
 
 #menu-categories-title {
     color: #010736;
-    margin: 15px;
-    font-weight: bold;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 #menu-items > div {

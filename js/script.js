@@ -43,7 +43,7 @@ $(function () {
 
   dc.loadHomePage = function () {
     showActive("#home-item");
-    removeActive("#menu-item")
+    removeActive("#menu-item");
     showLoading("#main-content");
 
     $ajaxUtils.sendGetRequest(homeHtml,
@@ -61,13 +61,14 @@ $(function () {
 
   dc.loadMenuCategories = function () {
     showActive("#menu-item");
-    removeActive("#home-item")
+    removeActive("#home-item");
     showLoading("#main-content");
 
     $ajaxUtils.sendGetRequest(allCategoriesUrl, retrieveAndShowCategoriesHtml);
   };
 
   dc.loadMenuItems = function (categoryShort) {
+    removeActive("#menu-item");
     showLoading("#main-content");
 
     $ajaxUtils.sendGetRequest((menuItemUrl+categoryShort), retrieveAndShowMenuItemsHtml);

@@ -48,7 +48,14 @@ $(function () {
 
     $ajaxUtils.sendGetRequest(homeHtml,
       function (res) {
-        insertHtml("#main-content", res);
+        var specials = null;
+        $ajaxUtils.sendGetRequest(allCategoriesUrl, 
+          function (res1) {
+            specials = chooseRandomCategory(res1);
+            var short_name = specials.short_name;
+            res = insertProperty(res, "randomCategory", short_name);
+            insertHtml("#main-content", res);
+          });
       }, false);    
   };
 
@@ -147,6 +154,14 @@ $(function () {
       classes = classes.replace(new RegExp("active", "g"), "");
       document.querySelector(disabledItem).className = classes;
     }
+  }
+
+  function chooseRandomCategory (categories) {
+    // Choose a random index into the array (from 0 inclusively until array length (exclusively))
+    var randomArrayIndex = Math.floor(Math.random() * categories.length);
+  
+    // return category object with that randomArrayIndex
+    return categories[randomArrayIndex];
   }
 
   global.$dc = dc;

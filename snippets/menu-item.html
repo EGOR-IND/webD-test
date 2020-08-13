@@ -1,0 +1,24 @@
+<div class="col-lg-4 col-xl-3 col-sm-6 col-12">
+    <div class="dish-title">
+        <div id="dish-name">{{name}}</div>
+        <img src="/images/menu/{{catShortName}}/{{short_name}}.jpg" alt="{{name}}">
+        <div id="dish-info">
+            <span id="dish-price">{{price_large}}</span>
+            <span id="dish-menu-id">{{short_name}}</span>
+            <div class="accordion" id="myAccordion">
+                <div class="card" id="details">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button id="details-btn" type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse{{short_name}}">details</button>
+                        </h2>
+                    </div>
+                    <div id="collapse{{short_name}}" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
